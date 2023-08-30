@@ -60,7 +60,7 @@ int main(int argc, char **argv) {
     }
 
     // Set the number of threads to use.
-    if (num_threads > 0) {
+    if (conf.num_threads > 0) {
         omp_set_dynamic(0);
         omp_set_num_threads(conf.num_threads);
     } else {
